@@ -1,20 +1,18 @@
 version: "3.2"
 services:
   django:
-    build:
-        context: .
-        dockerfile: Dockerfile
+    image: django
     ports:
-        - "8080:8080"
-  mysql:
-    image: mariadb
-    environment:
-        - MYSQL_ROOT_PASSWORD=root
-        - MYSQL_TCP_PORT=3306
-    ports:  
-        - "3306:3306"
-    volumes:
-        -  mysql:/var/lib/mysql
+      - "8080:8080"
+#   mysql:
+#     image: mariadb
+#     environment:
+#         - MYSQL_ROOT_PASSWORD=root
+#         - MYSQL_TCP_PORT=3306
+#     ports:
+#         - "3306:3306"
+#     volumes:
+#         -  mysql:/var/lib/mysql
 
-volumes:
-    mysql:
+# volumes:
+#     mysql:
