@@ -1,0 +1,59 @@
+# Get ALL TODOS
+{
+  allTodos {
+    id
+    text
+    completed
+    priority
+    dueDate
+  }
+}
+
+# Get TODO by ID
+# {
+#   todo(id:2) {
+#     id,
+#     text
+#   }
+# }
+
+# Get TODO by TEXT
+# {
+#   todo(text:"from shell"){
+#     id,
+#     text,
+#     completed,
+#     priority,
+#     dueDate
+#   }
+# }
+
+# ADD TODO
+# mutation{
+#  	addTodo(todo:{text:"wash the car"}){
+#    todo {
+#      id,
+#     text,
+#     completed,
+#     priority,
+#     dueDate
+#   	}
+#   }
+# }
+
+# EDIT TODO
+# mutation{
+#   editTodo(
+#       id:4
+#       text:"take garbage"
+#       priority:"HIGH")
+#   {
+#     todo{
+#        id,
+#       text,
+#       completed,
+#       priority,
+#       dueDate
+#     }
+#   }
+# }
